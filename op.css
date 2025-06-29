@@ -1,0 +1,434 @@
+/* ...existing code... */
+.logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    height: 135px;
+}
+.banner {
+    background: url('imagenes/banner.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 6rem 1rem 4rem 1rem;
+}
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.banner p {
+    font-size: 1.5rem;
+}
+/* ...existing code... */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #00A86B;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: #33691e;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.producto {
+    flex: 1 1 200px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #33691e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 90%;
+    }
+
+    form input, form textarea, form button {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+
+
+form {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #88c057;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #6ea440;
+}
+.sobre-nosotros {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: #e8f5e9;
+    border-radius: 12px;
+    padding: 2rem;
+}
+.sobre-nosotros .texto {
+    flex: 2;
+}
+.img-nosotros {
+    flex: 1;
+    max-width: 300px;
+    border-radius: 12px;
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.producto {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 1rem;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.producto:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+.producto img {
+    border-radius: 8px;
+    height: 180px;
+    object-fit: cover;
+}
+.cuidados {
+    background: #f1f8e9;
+    border-radius: 12px;
+    margin: 2rem 0;
+    padding: 2rem;
+}
+.cuidados ul {
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 0;
+}
+.cuidados li {
+    margin-bottom: 1rem;
+}
+
+.contacto-extra {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.contacto-extra img {
+    width: 32px;
+    height: 32px;
+}
+.banner {
+    position: relative;
+    text-align: center;
+    min-height: 350px; /* Ajusta la altura según tu preferencia */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.8; /* Ajusta la opacidad si lo deseas */
+}
+
+.banner h1,
+.banner p {
+    position: relative;
+    z-index: 2;
+}
+.button {
+    background-color: #FFD700; /* dorado */
+    color: #00A86B; /* verde jade */
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* ...existing code... */
+.logo-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #00A86B;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;      /* Solo padding horizontal */
+    height: 80px;         /* Altura delgada para la franja */
+    min-height: 0;
+    overflow: visible;    /* Permite que el logo sobresalga */
+}
+
+
+/* ...existing code... */
+.sobre-nosotros {
+    background: #e8f5e9;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+.nosotros-contenido h2 {
+    color: #33691e;
+    margin-bottom: 1rem;
+}
+.nosotros-contenido p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+.valores {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+.valor {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 1.2rem 1rem;
+    flex: 1 1 220px;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+.icono-img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.agradecimiento {
+    font-weight: bold;
+    color: #00A86B;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+/* ...existing code... */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+    background-image: url('SharedScreenshot\ fondo\ body.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* ...existing code... */
+.cuidados-contenedor {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+.cuidados-bloque {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 1.5rem 1.2rem;
+    flex: 1 1 350px;
+    min-width: 280px;
+}
+.cuidados-bloque h3 {
+    color: #00A86B;
+    margin-top: 0;
+}
+.cuidados-bloque ol {
+    padding-left: 1.2rem;
+}
+.cuidados-bloque li {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+.tip {
+    background: #e8f5e9;
+    color: #33691e;
+    border-left: 4px solid #00A86B;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0 0 0;
+    border-radius: 6px;
+    font-size: 0.98rem;
+}
+.cuidados-extra {
+    background: #f1f8e9;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    color: #33691e;
+    font-size: 1.08rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+/* ...existing code... */
+
+/* ...existing code... */
+.form-contacto {
+    background: rgba(255, 255, 255, 0.7); /* Fondo blanco translúcido */
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.2rem;
+    border-radius: 8px;
+    border: none;
+    background: rgba(0, 168, 107, 0.15); /* Verde translúcido */
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    transition: background 0.3s;
+}
+
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+    background: rgba(0, 168, 107, 0.25);
+    outline: 2px solid #00A86B;
+}
+
+.form-contacto button {
+    background: transparent;
+    color: #00A86B;
+    border: 2px solid #00A86B;
+    padding: 0.7rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.form-contacto button:hover {
+    background: #00A86B;
+    color: #fff;
+}
+
+/* Placeholder personalizado */
+.form-contacto input::placeholder,
+.form-contacto textarea::placeholder {
+    color: #33691e;
+    opacity: 0.8;
+    font-style: italic;
+}
+/* ...existing code... */
